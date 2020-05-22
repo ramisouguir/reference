@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <link rel = "stylesheet" href = "styles.css">
+        <title>Reference Page</title>
+    </head>
+    <body>
+        <!-- You can write comments in html like this -->
+        <canvas id = "canvas" width="1218" height="952" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -1;"></canvas>
+        <h1 id = "title">This website is for referencing later</h1>
+        <ul id = "navigationBar">
+            <li><a href = "home.html">Home</a></li>
+            <li><a href = "lists.html">Lists</a></li>
+            <li><a href = "canvas.html">Canvas</a></li>
+            <li><a href = "contacts.html">Contact</a></li>
+        </ul>
+        <p>This is a paragraph and this <br> is a line break</p>
+        <p>You can set some words to have <i>specific</i> attributes like being <strong>strong</strong><br>
+            or <b>bold.</b> You can even make some words <sub>subscripted</sub> or <sup>superscripted</sup>.<br>
+            Words can be <em>emphasized</em> or <mark>marked</mark> or <small>small</small>.<br>
+            Lastly, words can be <ins>inserted </ins>or <del>deleted.</del></p>
+
+        <p>Barack Obama once said <q>Use the q tag to put quotations in html</q></p>
+        <p>One time Obama even told the Washington Post: 
+            <blockquote>In order to put a quote that's longer than a couple sentences, you have to use the blockquote tag.<br>
+             The blockquote tag is especially useful so that you don't need to put all the indents and do all the formatting <br>
+             yourself. Don't sleep on the blockquote tag fool. The <abbr title = "Federal Communications Commission">FCC</abbr> won't let me be or let me be me so let me <br>
+             see, they tried to shut me down on MTV, but it feels so empty without me.</blockquote></p>
+
+        <p><bdo dir = "rtl">You can write text backwards by using bi-directrional override.</bdo></p>
+
+        <br>
+        <picture>
+            <source media = "(max-width: 1200px)" srcset="images/smallobama.jpg">
+            <img src = "images/obama.jpg" id = "obama" alt = "There was supposed to be a picture here" width = 300px height = 200px title = "Big Man Barack" usemap = "#obamamap">
+        </picture>
+        <br>
+        
+        <map name = "obamamap">
+            <area shape = "rect" coords = "135, 120, 145, 130" alt = "face" href = "https://pointerpointer.com/" target = "_blank">
+        </map>
+
+        <a href = "https://ilooklikebarackobama.com" target = "_blank">This is a zelda</a><br><br>
+        <button>Button</button><br><br>
+
+        <table id = "foodTable">
+            <caption><i>Favorite Vegetarian Restaurant Foods</i></caption>
+            <tr>
+                <th>Restaurant</th>
+                <th>Menu Item</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>Taco Bell</td>
+                <td>Cheese Quesidilla</td>
+                <td>7.5/10</td>
+            </tr>
+            <tr>
+                <td>Burger King</td>
+                <td>Impossible Burger</td>
+                <td>8/10</td>
+            </tr>
+            <tr>
+                <td>Chipotle</td>
+                <td>Vegetarian Burrito</td>
+                <td>9.5/10</td>
+            </tr>
+        </table>
+        <hr>
+        <address id = "contact">
+            Rami Souguir<br>
+            February 2020<br>
+            ramisouguir@gmail.com<br>
+            Ann Arbor, USA<br>
+        </address>
+    </body> 
+</html>

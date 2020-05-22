@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+body{
+    background-color: #dceef2;
+}
+
+table#foodTable, table#foodTable td,table#foodTable th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#foodTable td, table#foodTable th{
+    padding: 2px;
+}
+
+table#foodTable th{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+table#foodTable td:nth-child(3){
+    text-align: right;
+}
+
+table#foodTable tr:nth-child(even){
+    background-color: #d2d4d9;
+}
+
+table#foodTable tr:nth-child(odd){
+    background-color: white;
+}
+
+ul#gravy{
+    list-style-type: square;
+}
+
+ul#sauces{
+    list-style-type: circle;
+}
+
+ul#navigationBar{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+    height:100%;
+    background-color: #0a3842;
+}
+
+ul#navigationBar li{
+    float: left;
+}
+
+ul#navigationBar li a{
+    display: block;
+    color: #d2d4d9;
+    font-size: 18px;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    border-right: 1px solid black;
+    border-bottom: 3px transparent;
+}
+
+ul#navigationBar li a:hover{
+    border-bottom: 3px solid #b03854;
+}
+
+h1#title{
+    font-family: 'Odibee Sans', sans-serif; 
+    font-size: 56px;
+}
