@@ -1,5 +1,5 @@
 const c = document.getElementById("canvas");
-const canvas = c.getContext();
+const canvas = c.getContext("2d");
 
 function makeCircle()
 {
