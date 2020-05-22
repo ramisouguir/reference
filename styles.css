@@ -2,6 +2,7 @@
 
 body{
     background-color: #dceef2;
+    margin-left: 10px;
 }
 
 table#foodTable, table#foodTable td,table#foodTable th{
