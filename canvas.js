@@ -4,12 +4,14 @@ const canvas = c.getContext("2d");
 function makeCircle()
 {
     canvas.beginPath();
-    canvas.arc(200, 200, 40, 0, 2 * Math.PI);
+    canvas.arc(200, 400, 50, 0, 2 * Math.PI);
     canvas.stroke();
 }
 
 function main()
 {
+    c.width = screen.width+130;
+    c.height = screen.height;
     makeCircle();
 }
 
