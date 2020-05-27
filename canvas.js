@@ -10,8 +10,8 @@ function makeCircle()
 
 function main()
 {
-    c.width = screen.availWidth;
-    c.height = screen.availHeight;
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
     makeCircle();
 }
 
