@@ -1,10 +1,15 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
+var numberOfCircles = 200;
+var radiusRangeLow = 5;
+//sets the lowest possible radius
+var radiusRangeHigh = 12;
+//sets the highest possible radius
 
-function makeCircle(x,y,alpha,color)
+function makeCircle(x,y,alpha,color,radius)
 {
     ctx.beginPath();
-    ctx.arc(x, y, 20, 0, 2 * Math.PI);
+    ctx.arc(x, y, radius, 0, 2 * Math.PI);
     ctx.fillStyle = color;
     ctx.globalAlpha = alpha;
     ctx.fill();
@@ -22,11 +27,12 @@ function generateRandomColor()
 
 function fillArrays()
 {
-    for(var i =0; i<20; i++)
+    for(var i =0; i<numberOfCircles; i++)
     {
         xPos[i] = Math.floor(Math.random()*window.innerWidth);
         yPos[i] = Math.floor(Math.random()*window.innerHeight);
         startingAlphas[i] = Math.random()*.7;
+        radiuses[i] = Math.floor(Math.random()*((radiusRangeHigh-radiusRangeLow)+1)+radiusRangeLow);
         colors[i] = generateRandomColor();
         var randomX;
         var randomY;
@@ -81,12 +87,15 @@ var goingUp = new Array();
 var colors = new Array();
 //determines color of circle
 
+var radiuses = new Array();
+//determines radiuses (or radii) of circles
+
 function drawCircles()
 {
     ctx.clearRect(0,0,window.innerWidth,window.innerHeight)
-    for(var i =0; i<20; i++)
+    for(var i =0; i<numberOfCircles; i++)
     {
-        makeCircle(xPos[i], yPos[i], startingAlphas[i], colors[i]);
+        makeCircle(xPos[i], yPos[i], startingAlphas[i], colors[i], radiuses[i]);
 
         if(xPos[i]>window.innerWidth+30)
         {
